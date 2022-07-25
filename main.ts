@@ -1,7 +1,7 @@
 function API (method: string, degree: number) {
     if (method == "GET") {
-        radio.sendValue("GET", degree)
-    } else {
+        radio.sendValue("GET", 0)
+    } else if (method == "POST") {
         radio.sendValue("POST", degree)
     }
 }
